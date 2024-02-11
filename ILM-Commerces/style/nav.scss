@@ -1,0 +1,67 @@
+.header {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+nav {
+	margin: 0 auto;
+	border-radius: 30px;
+	height: 82px;
+	width: 100%;
+	max-width: 1340px;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $issy-brown;
+}
+
+.page--homepage {
+	nav,
+	.logo__bg {
+		background-color: $issy-yellow;
+	}
+}
+
+.page--commerces {
+	nav,
+	.logo__bg {
+		background-color: $issy-green;
+	}
+}
+
+.page--map {
+	nav,
+	.logo__bg {
+		background-color: $issy-blue;
+	}
+}
+
+.logo {
+	position: relative;
+	top: 30px;
+	
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: -10px;
+		right: -4px;
+		border-radius: 50%;
+		width: 110px;
+		height: 110px;
+	}
+	
+	img {
+		z-index: 1;
+		position: relative;
+	}
+}
+
+a {
+	transition: color 0.3s, border-color 0.3s;
+}
+a.is-active,
+a:hover {
+	color: $black;
+	border-color: $black;
+}
