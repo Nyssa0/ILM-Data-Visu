@@ -1,0 +1,59 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "animations";
+@import "nav";
+@import "pages";
+
+body {
+	scrollbar-width: none;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.button {
+	border: 1px solid $issy-brown;
+	border-radius: 50px;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	
+	span {
+		display: inline-flex;
+	}
+	
+	svg {
+		height: 20px;
+		width: 20px;
+	}
+}
+
+.button--full {
+	border: none;
+	color: $black;
+
+	.page--homepage & {
+		background-color: $issy-yellow;
+	}
+	
+	.page--map & {
+		background-color: $issy-blue;
+	}
+	
+	.page--commerces & {
+		background-color: $issy-green;
+	}
+	
+}
+
+
+
