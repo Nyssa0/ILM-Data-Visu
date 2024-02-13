@@ -1,0 +1,35 @@
+html.is-changing .transition-slide {
+	transition: transform .8s cubic-bezier(0.5, 0, 0.15, 1);
+}
+
+.transition-slide.is-next-container {
+	transform: translateX(100%);
+}
+
+.transition-slide.is-previous-container {
+	transform: translateX(-100%);
+}
+
+html.to-left .transition-slide.is-next-container {
+	transform: translateX(-100%);
+}
+
+html.to-left .transition-slide.is-previous-container {
+	transform: translateX(100%);
+}
+
+html.to-bottom .transition-slide.is-next-container {
+	transform: translateY(-100%);
+}
+
+html.to-bottom .transition-slide.is-previous-container {
+	transform: translateY(100%);
+}
+
+html.to-up .transition-slide.is-next-container {
+	transform: translateY(100%);
+}
+
+html.to-up .transition-slide.is-previous-container {
+	transform: translateY(-100%);
+}
