@@ -54,10 +54,13 @@ a {
 	.page--commerces & {
 		background-color: $issy-green;
 	}
-	
 }
 
+body {
 
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 1.6rem;
 
 #homepage{
     background-image: url('../assets/bg-commerces.svg');
@@ -306,4 +309,84 @@ a {
     100% {
         background-color: #A5DCC8;
     }
+}
+
+	.title-datas-section {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+	
+		h1 {
+			font-size: 48px;
+		}
+	
+		p {
+			text-align: center;
+			font-size: 1.6rem;
+			line-height: 2rem;
+			max-width: 60rem;
+		}
+	}
+	
+	.datas-section {
+		.graph-1 {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+			max-width: 55rem;
+			margin-left: 3rem;
+
+			#container{
+				margin-bottom: 5rem;
+			}
+		}
+		.graph-2 {
+			display: flex;
+			justify-content: center;
+			gap: 4rem;
+			height: 30rem;
+			align-items: center;
+	
+			p {
+				max-width: 20rem;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 1.6rem;
+				line-height: 1.6rem;
+			}
+		}
+	}
+	
+	.btn-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8rem;
+		margin-top: 4rem;
+		font-family: Arial, Helvetica, sans-serif;
+		line-height: 1.6rem;
+		font-weight: 700;
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	
+	
+		.button {
+			display: flex;
+			justify-content: center;
+			width: 12rem;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1rem;
+			transition: box-shadow 0.3s ease; /* Ajout de la transition */
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre par défaut */
+	
+		p {
+			font-size: 1.6rem;
+		}
+	}
+		.button:hover {
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Changement de l'ombre au survol */
+		}
+	
+	}
 }
