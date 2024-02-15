@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -238,6 +239,78 @@ a {
 }
 .page--commerces .button--full {
   background-color: #A5DCC8;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+body .title-datas-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+body .title-datas-section h1 {
+  font-size: 48px;
+}
+body .title-datas-section p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  max-width: 60rem;
+}
+body .datas-section .graph-1 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 55rem;
+  margin-left: 3rem;
+}
+body .datas-section .graph-1 #container {
+  margin-bottom: 5rem;
+}
+body .datas-section .graph-2 {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  height: 30rem;
+  align-items: center;
+}
+body .datas-section .graph-2 p {
+  max-width: 20rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+body .btn-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin-top: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+body .btn-section .button {
+  display: flex;
+  justify-content: center;
+  width: 12rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease; /* Ajout de la transition */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre par défaut */
+}
+body .btn-section .button p {
+  font-size: 1.6rem;
+}
+body .btn-section .button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Changement de l'ombre au survol */
 }
 
 /*# sourceMappingURL=style.css.map */
