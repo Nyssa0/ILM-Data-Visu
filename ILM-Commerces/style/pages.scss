@@ -15,10 +15,41 @@
 	background-size: cover;
 }
 
+.page--index {
+	background: url("../assets/bg-index.png") no-repeat center center;
+	background-size: contain;
+}
+
 .layout {
 	padding: 40px 50px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.card--index {
+	position: absolute;
+	top: 195px;
+	left: 642px;
+	border-radius: 10px;
+	width: 615px;
+	height: 454px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	background-color: #f4f4f4;
+	
+	h2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
 }

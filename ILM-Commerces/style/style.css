@@ -11,9 +11,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-          text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -190,12 +188,62 @@ a:hover {
   background-size: cover;
 }
 
+.page--index {
+  background: url("../assets/bg-index.png") no-repeat center center;
+  background-size: contain;
+}
+
 .layout {
   padding: 40px 50px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card--index {
+  position: absolute;
+  top: 195px;
+  left: 642px;
+  border-radius: 10px;
+  width: 615px;
+  height: 454px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+}
+.card--index h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.card--index img {
+  width: 100%;
+  height: auto;
+}
+
+.page--map main {
+  width: 100%;
+  height: 100%;
+}
+.page--map main #map {
+  width: 100%;
+  height: 100%;
+}
+.page--map main #map img {
+  width: 10px;
+  height: 10px;
+}
+
+.gm-style .gm-style-iw-c {
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px !important;
 }
 
 body {
@@ -244,7 +292,7 @@ a {
 }
 
 #homepage {
-  background-image: url("images/Background.png");
+  background-image: url("../assets/bg-commerces.svg");
   height: 100vh;
   width: 100vw;
 }
@@ -281,8 +329,7 @@ a {
   padding: 1rem 2rem;
   border-radius: 100px;
   transition: 0.3s;
-  background-color: rgba(255, 200, 0, 0.2941176471);
-  width: -moz-fit-content;
+  background-color: #ffc8004b;
   width: fit-content;
   animation: btnAnim 1s 2s infinite alternate;
 }
@@ -325,8 +372,7 @@ a {
   padding: 1rem 2rem;
   border-radius: 100px;
   transition: 0.3s;
-  background-color: rgba(165, 220, 200, 0.5215686275);
-  width: -moz-fit-content;
+  background-color: #a5dcc885;
   width: fit-content;
   animation: btnAnim2 1s 2s infinite alternate;
   align-self: center;
@@ -357,7 +403,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid 1px rgba(0, 0, 0, 0.2941176471);
+  border: solid 1px #0000004b;
   border-radius: 15px;
   height: 25vh;
   text-align: center;
@@ -375,7 +421,7 @@ a {
   margin-bottom: 20px;
 }
 #commerces section #cards_section .cards .card:hover {
-  background: rgba(165, 220, 200, 0.5215686275);
+  background: #a5dcc885;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -402,7 +448,7 @@ a {
   color: white;
 }
 #commerces section .cards1 .up {
-  background: rgba(165, 220, 200, 0.5215686275) !important;
+  background: #a5dcc885 !important;
 }
 #commerces section .cards1 .up:hover {
   transform: scale(1) !important;
@@ -414,7 +460,7 @@ a {
   transform: translateY(-40vh);
 }
 #commerces section .cards3 .down {
-  background: rgba(165, 220, 200, 0.5215686275) !important;
+  background: #a5dcc885 !important;
 }
 #commerces section .cards3 .down:hover {
   transform: scale(1) !important;
@@ -441,7 +487,7 @@ a {
 
 @keyframes btnAnim {
   0% {
-    background-color: rgba(255, 200, 0, 0.2941176471);
+    background-color: #ffc8004b;
   }
   100% {
     background-color: #FFC600;
@@ -449,9 +495,11 @@ a {
 }
 @keyframes btnAnim2 {
   0% {
-    background-color: rgba(165, 220, 200, 0.5215686275);
+    background-color: #a5dcc885;
   }
   100% {
     background-color: #A5DCC8;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

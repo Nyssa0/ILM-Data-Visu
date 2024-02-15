@@ -4,6 +4,7 @@
 @import "animations";
 @import "nav";
 @import "pages";
+@import "map";
 
 body {
 	scrollbar-width: none;
@@ -59,7 +60,7 @@ a {
 
 
 #homepage{
-    background-image: url('images/Background.png');
+    background-image: url('../assets/bg-commerces.svg');
     height: 100vh;
     width: 100vw;
 
