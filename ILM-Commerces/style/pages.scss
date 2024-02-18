@@ -16,7 +16,7 @@
 }
 
 .page--index {
-	background: url("../assets/bg-index.png") no-repeat center center;
+	background: url("../assets/index.png") no-repeat center center;
 	background-size: contain;
 }
 
@@ -30,11 +30,11 @@
 
 .card--index {
 	position: absolute;
-	top: 195px;
-	left: 642px;
+	top: 22%;
+	left: 25%;
 	border-radius: 10px;
-	width: 615px;
-	height: 454px;
+	width: 605px;
+	height: 512px;
 	padding: 15px;
 	display: flex;
 	flex-direction: column;
@@ -44,7 +44,7 @@
 	background-color: #f4f4f4;
 	
 	h2 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: bold;
 		text-align: center;
 	}

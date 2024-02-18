@@ -14,8 +14,17 @@
 }
 
 .gm-style .gm-style-iw-c {
-	background-color: pink;
+	background-color: $issy-blue;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	padding: 10px !important;
+	
+	h4 {
+		font-weight: bold;
+	}
+}
+
+
+.gm-style-iw-tc::after {
+	background-color: $issy-blue !important;
 }
